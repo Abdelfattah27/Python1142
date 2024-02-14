@@ -1,25 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import FunctionLifeCycle from './components/FunctionLifeCycle';
+import TrackMouse from './components/TrackMouse';
+import { useState } from 'react';
+import ProNavBar from './proComponents/ProNavBar';
+import MainComponent from './proComponents/MainComponent';
 
 function App() {
+  // const [show , setShow] = useState(true)
+  // return (
+  //   <div className="App">
+  //      {show && <TrackMouse />}
+  //      <button onClick={() => setShow(!show)}>Toggle Show</button>
+  //    {/* <FunctionLifeCycle /> */}
+  //   </div>
+  // );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <ProNavBar></ProNavBar>
+      <MainComponent />
     </div>
-  );
+  )
 }
 
 export default App;
