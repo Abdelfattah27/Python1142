@@ -18,7 +18,6 @@ function App() {
 
   return (
     <div className='app'>
-      <ProNavBar></ProNavBar>
       <MainComponent />
     </div>
   )
